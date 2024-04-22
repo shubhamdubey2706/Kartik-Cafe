@@ -1,0 +1,31 @@
+/* Menu.css */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.menu-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease; /* Add a smooth hover effect */
+}
+
+.menu-item:hover {
+  transform: scale(1.05); /* Enlarge the box on hover */
+}
+
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .menu {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

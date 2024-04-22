@@ -1,0 +1,16 @@
+/* Cart.css */
+.cart {
+    /* Cart styles */
+    background-color: #f9f9f9;
+    padding: 16px;
+    /* Add other styles as needed */
+  }
+  
+  /* Media query for mobile phones */
+  @media screen and (max-width: 480px) {
+    .cart {
+      /* Adjust styles for smaller screens */
+      padding: 8px;
+    }
+  }
+  

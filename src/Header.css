@@ -1,0 +1,69 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  text-shadow: 13px 6px 2px rgba(0, 0, 0, 0.2);
+  color: #584242;
+  border: 2px solid #ccc; /* Add border */
+  padding: 0.5rem; /* Add padding */
+  animation: waterAnimation 3s infinite alternate; /* Water-like animation */
+  border-radius: 20px;
+}
+
+input[type="text"] {
+  padding: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70%;
+  font-size: 0.9rem; /* Smaller font size */
+  box-shadow: 17px 13px 6px 6px rgb(41 42 44 / 16%);
+border-radius: 30px;
+background-color: whitesmoke;
+}
+
+.cart-icon {
+  font-size: 1.8rem; /* Larger icon size */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Add hover animation */
+}
+
+.cart-icon:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Water-like animation keyframes */
+@keyframes waterAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+/* Header.css */
+.header {
+  /* Header styles */
+  background-color: #cfc3c34a;
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Media query for mobile phones */
+@media screen and (max-width: 480px) {
+  .header {
+    /* Adjust styles for smaller screens */
+    padding: 8px;
+    font-size: 14px;
+  }
+}
