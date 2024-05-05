@@ -7,8 +7,10 @@
 }
 
 .menu-item {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color :#daa79ade;
+  border-radius: 30px;
+  border: 1px solid black;
+  box-shadow: 20px 15px 4px 0px #f1e9e9;
   padding: 1rem;
   text-align: center;
   transition: transform 0.2s ease; /* Add a smooth hover effect */
@@ -28,4 +30,8 @@
   .menu {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
+} .item-name,
+.item-price {
+  color: black;
 }
+

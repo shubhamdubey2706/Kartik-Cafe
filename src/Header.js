@@ -1,13 +1,20 @@
+
 // Header.js
-import React from 'react';
-import './Header.css'; // Import your CSS file
+import React, { useState } from 'react';
+import './Header.css'; // Import your CSS file 
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import Cart from './Cart'; // Import the Cart component
 
 const Header = () => {
+  const [cartItems, setCartItems] = useState([]); // Initialize cart state
+
   return (
     <header className="header">
-      <div className="logo">Kartik Cafe</div>
+      <Link to="/" className="logo">Kartik Cafe</Link>
       <input type="text" placeholder="Search for food..." />
-      <div className="cart-icon">🛒</div>
+      <Link to="/cart" className="cart-icon">
+        🛒 ({cartItems.length})
+      </Link>
     </header>
   );
 };
